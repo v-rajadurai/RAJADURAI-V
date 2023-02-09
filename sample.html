@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            background-color:rgb(170, 170, 140);
+        }
+        .layout{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh;
+            grid-template-areas: "a a a " "b b b" "c c c" "d d d" "e e e";
+
+
+        }
+        .layout nav,header,section,footer{
+            border:1px solid black;
+        }
+        
+        .sec{
+            grid-area: a;
+        }
+        .sec1{
+            grid-area: b;
+        }
+        .sec2{
+            grid-area: c;
+        }
+        .sec3{
+            grid-area: d;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="layout">
+    <nav>1</nav>
+    <header class="sec">2</header>
+    <section class="sec1">3</section>
+    <section class="sec2">4</section>
+    <section class="sec3">5</section>
+    <section class="sec4">6</section>
+    <section class="sec5">7</section>
+    <section class="sec6">8</section>
+    <footer class="sec6">9</footer>
+    </div>   
+</body>
+</html>
